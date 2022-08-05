@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 250px;
+  height: 420px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.nft_image {
+  width: 210px;
+  height: 210px;
+  background: url(images/image-equilibrium.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.header {
+  font-size: 16px;
+  margin-top: 15px;
+  color: hsl(0, 0%, 100%);
+}
+
+.description {
+  font-size: 12px;
+  margin-top: 15px;
+  color: hsl(215, 51%, 70%);
+}
+
+.price_desc {
+  margin-top: 15px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-bottom: 15px;
+}
+
+.price,
+.days_left {
+  display: flex;
+  align-items: center;
+}
+
+.price img {
+  width: 8px;
+  margin-right: 5px;
+}
+
+.price span {
+  color: hsl(178, 100%, 50%);
+}
+
+.days_left img {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.days_left span {
+  color: hsl(215, 51%, 70%);
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.creator img {
+  width: 20px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.creator p {
+  font-size: 13px;
+  color: hsl(215, 51%, 70%);
+  
+}
+
+.creator p span {
+  color: hsl(0, 0%, 100%);
+  margin-left: 2px;
+  
+}
+
+.attribution {
+  margin-top: 20px;
+  font-size: 10px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.5;
+}
+
+.attribution a {
+  color: hsl(0, 0%, 100%);
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 350px;
+    height: 550px;
+    padding: 25px;
+  }
+
+  .nft_image {
+    width: 300px;
+    height: 300px;
+    margin: 5px auto;
+  }
+
+  .header {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+
+  .price_desc {
+    font-size: 17px;
+  }
+
+  .price img {
+    width: 10px;
+  }
+
+  .creator img {
+    width: 25px;
+  }
+  
+  .creator p {
+    font-size: 15px;
+  }
+}
